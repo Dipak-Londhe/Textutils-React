@@ -1,0 +1,72 @@
+.buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 60%;
+  margin-left: 20%;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.count {
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 44%;
+  margin-left: 28%;
+  align-items: center;
+  justify-content: space-between;
+  color: silver;
+  margin-bottom: -40px;
+  font-size: 18px;
+
+}
+
+.text{
+  margin-top: 24px;
+  margin-bottom:0px;
+  width: fit-content;
+  padding-left: 20%;
+}
+
+
+@media (max-width:550px) {
+
+  .buttons {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 98%;
+    margin-left: 0.5%;
+
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+  .count span {
+    margin-left: 24px;
+  }
+
+  .count {
+
+    width: 84%;
+    margin-left: 8%;
+    margin-bottom: -15px;
+
+    font-size: 15px;
+
+  }
+
+  .text{
+    margin-top: 24px;
+    margin-bottom:0px;
+    width: fit-content;
+    padding-left: 10%;
+  }
+
+}

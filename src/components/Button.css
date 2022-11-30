@@ -1,0 +1,116 @@
+.button{
+
+    font-size:18px;
+    padding: 12px 24px 12px 24px;
+    border: none;
+    border-radius:4px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    color:white;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+ 
+}
+
+.button:active{
+    scale:0.97;
+}
+
+
+
+.Upper-Case{
+    background-color: #00FF00;
+
+}
+
+.Lower-Case{
+    background-color: rgb(255, 172, 186);
+    
+}
+
+.Clear{
+    background-color: red;
+}
+
+.Copy{
+    background-color: blue;
+}
+
+.Words{
+    background-color: yellow;
+}
+
+.Characters{
+    background-color: rgb(0, 224, 249);
+}
+
+.remove-spaces{
+    background-color: rgb(157, 69, 225);
+}
+
+.Upper-Case:hover{
+    background-color: white;
+    color:#00FF00;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    
+}
+
+.Lower-Case:hover{
+    background-color: white;
+    color:rgb(255, 172, 186);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    
+}
+
+.Clear:hover{
+    background-color: white;
+    color:red;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    
+}
+
+.Copy:hover{
+    background-color: white;
+    color:blue;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    
+}
+
+.Words:hover{
+    background-color: white;
+    color:yellow;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    
+}
+
+.Characters:hover{
+    background-color: white;
+    color: rgb(0, 224, 249);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    
+}
+
+.remove-spaces:hover{
+    background-color: white;
+    color:rgb(157, 69, 225);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    
+}
+
+
+@media (max-width:550px){
+
+    .button{
+
+        font-size:16px;
+        padding: 10px 18px 10px 18px;
+        border: none;
+        border-radius:3px;
+        margin-left: 10px;
+        margin-top: 15px;
+        margin-right: 13px;
+        
+        
+    }
+
+}
