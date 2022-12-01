@@ -21,12 +21,19 @@ function App() {
   const function_run0 =() => {
 
     setd(text.toUpperCase())
-    toast.success(' Converted to upper case ' , {autoClose:4000})
+    if (text.split(/\s+/).filter((element)=> { return element.length!==0; }).length!==0)
+       { toast.success(' Converted to upper case ' , {autoClose:4000}) }
+    else
+    toast.error(' Text is empty ' , {autoClose:4000})
+        
   }
 
   const function_run1 = () => {
     setd(text.toLowerCase())
-    toast.success(' Converted to lower case ' , {autoClose:4000})
+    if (text.split(/\s+/).filter((element)=> { return element.length!==0; }).length!==0)
+       { toast.success(' Converted to lower case ' , {autoClose:4000}) }
+    else
+    toast.error(' Text is empty ' , {autoClose:4000})
   }
 
   const function_run2 = () => {
@@ -38,11 +45,14 @@ function App() {
 
   const function_run3 = () => {
     navigator.clipboard.writeText(text);
-    toast.success(' Text copied ',{autoClose:4000});
+    if (text.split(/\s+/).filter((element)=> { return element.length!==0; }).length!==0)
+       { toast.success(' Text copied ' , {autoClose:4000}) }
+    else
+    toast.error(' Text is empty ' , {autoClose:4000})
   }
   const [count, setc] = useState(0)
   const function_run4 = () => {
-    setc(text.split(' ').length);
+    setc(text.split(/\s+/).filter((element)=> { return element.length!==0; }).length);
   }
 
   const [count2, setc2] = useState(0)
@@ -52,7 +62,10 @@ function App() {
 
   const function_run6 = () => {
     setd(text.split(/[ ]+/).join(" "));
-    toast.success(' Extra spaces remove ',{autoClose:4000})
+    if (text.split(/\s+/).filter((element)=> { return element.length!==0; }).length!==0)
+       { toast.success(' extra spaces removed ' , {autoClose:4000}) }
+    else
+    toast.error(' Text is empty ' , {autoClose:4000})
     
   }
 
